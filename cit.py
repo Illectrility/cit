@@ -27,6 +27,7 @@ gender_questions = [
                     "Female": ["Gender fluid", "Non-binary", "Transmasc", "Agender"],
                     "Intersex": ["Gender fluid", "Non-binary", "Transfem", "Transmasc", "Agender"],
                 },
+                "Neutral": None,
             }
         },
 
@@ -48,6 +49,7 @@ gender_questions = [
                 "Neither male nor female": "Non-binary",
                 "I don't feel like I am actively living as a particular gender": "Agender",
                 "None": "Agender",
+                "Neutral": ["Agender", "Non-binary"],
             }
         },
 
@@ -69,6 +71,7 @@ gender_questions = [
                     "Intersex": "Intersex",
                 },
                 "I don't remember": None,
+                "Skip": None,
             }
         },
 
@@ -77,6 +80,7 @@ gender_questions = [
             "answers": {
                 "True": "Gender fluid",
                 "False": None,
+                "Skip": None,
             }
         },
 
@@ -96,6 +100,7 @@ gender_questions = [
                 },
                 "It varies from time to time": "Gender fluid",
                 "I don't feel like my gender identity influences my style/behavior/mannerisms": "Agender",
+                "Skip": None,
             }
         },
 
@@ -121,6 +126,7 @@ gender_questions = [
                 "Neither male nor female": "Non-binary",
                 "I don't feel like I am actively living as a particular gender": "Agender",
                 "None": "Agender",
+                "Skip": None,
             }
         },
 
@@ -129,6 +135,7 @@ gender_questions = [
             "answers": {
                 "True": "Agender",
                 "False": None,
+                "Skip": None,
             }
         },
 
@@ -154,6 +161,7 @@ gender_questions = [
                 "Neither male nor female": "Non-binary",
                 "I don't feel like I have felt connected to any particular gender": "Agender",
                 "None": "Agender",
+                "Skip": None,
             }
         },
 
@@ -170,6 +178,7 @@ gender_questions = [
                     "Female": ["Gender fluid", "Non-binary", "Transmasc"],
                     "Intersex": ["Gender fluid", "Non-binary", "Transfem", "Transmasc"],
                 },
+                "Skip": None,
             }
         },
 
@@ -200,6 +209,7 @@ gender_questions = [
                 "I don't care what gender my body looks like": ["Non-binary", "Agender"],
                 "I don't feel like my body would match my gender identity, regardless": ["Non-binary", "Agender"],
                 "It varies from time to time": "Gender fluid",
+                "Skip": None,
             }
         },
 
@@ -219,6 +229,7 @@ gender_questions = [
                 "They/Them": ["Intersex", "Non-binary", "Agender", "Gender fluid"],
                 "I don't care what pronouns people use": "Agender",
                 "It varies from time to time": "Gender fluid",
+                "Skip/Other": None,
             }
         },
 
@@ -231,6 +242,7 @@ gender_questions = [
             "answers": {
                 "True": "Agender",
                 "False": None,
+                "Skip": None,
             }
         }
     ]
@@ -320,7 +332,7 @@ else:
 input("Press enter to continue with the sexual orientation test.")
 
 # Sexual orientation
-sex_orientation_points = {"Asexual": 0, "Androphile": 0, "Gynophile": 0, "Bisexual": 0, "Pansexual": 0}
+sex_orientation_points = {"Asexual": 0, "Aceflux": 0, "Gray asexual": 0, "Androphile": 0, "Gynophile": 0, "Bisexual": 0, "Pansexual": 0}
 
 # Questions
 sex_orientation_questions = [
@@ -329,8 +341,11 @@ sex_orientation_questions = [
             "text": "I don't feel sexual desire or arousal, even in situations where I feel I \"should\".",
             "answers": {
                 "True": "Asexual",
+                "Mostly true": "Gray asexual",
+                "Mostly false": None,
                 "False": None,
                 "I don't know": None,
+                "It varies from time to time": "Aceflux",
             }
         },
 
@@ -338,8 +353,11 @@ sex_orientation_questions = [
             "text": "I rarely (or never) experience sexual urges or drives.",
             "answers": {
                 "True": "Asexual",
+                "Mostly true": "Gray asexual",
+                "Mostly false": None,
                 "False": None,
                 "I don't know": None,
+                "It varies from time to time": "Aceflux",
             }
         },
 
@@ -347,8 +365,11 @@ sex_orientation_questions = [
             "text": "I find it difficult to relate to media and culture that portrays sex as a universal aspect of human life.",
             "answers": {
                 "True": "Asexual",
+                "Mostly true": "Gray asexual",
+                "Mostly false": None,
                 "False": None,
                 "I don't know": None,
+                "It varies from time to time": "Aceflux",
             }
         },
 
@@ -357,8 +378,11 @@ sex_orientation_questions = [
             "text": "I generally don't feel sexually attracted to (i.e. want to actually have intercourse with) other people, regardless of their gender or appearance.",
             "answers": {
                 "True": "Asexual",
+                "Mostly true": "Gray asexual",
+                "Mostly false": None,
                 "False": None,
                 "I don't know": None,
+                "It varies from time to time": "Aceflux",
             }
         },
 
@@ -366,8 +390,11 @@ sex_orientation_questions = [
             "text": "Even if I am fascinated with a person on account of their looks or personality, I do not wish to actually have sex with them.",
             "answers": {
                 "True": "Asexual",
+                "Mostly true": "Gray asexual",
+                "Mostly false": None,
                 "False": None,
                 "I don't know": None,
+                "It varies from time to time": "Aceflux",
             }
         },
 
@@ -375,8 +402,11 @@ sex_orientation_questions = [
             "text": "I wouldn't mind if I never had sex (again).",
             "answers": {
                 "True": "Asexual",
+                "Mostly true": "Gray asexual",
+                "Mostly false": None,
                 "False": None,
                 "I don't know": None,
+                "It varies from time to time": "Aceflux",
             }
         },
 
@@ -384,13 +414,16 @@ sex_orientation_questions = [
             "text": "I don't really know what it is like to feel sexual attraction.",
             "answers": {
                 "True": "Asexual",
+                "Mostly true": "Gray asexual",
+                "Mostly false": None,
                 "False": None,
                 "I don't know": None,
+                "It varies from time to time": "Aceflux",
             }
         },
 
         {
-            "text": "I want to touch intimately and/or be naked in the company of:",
+            "text": "I generally would want to touch intimately and/or be naked in the company of:",
             "answers": {
                 "A male-presenting person": "Androphile",
                 "A female-presenting person": "Gynophile",
@@ -402,7 +435,7 @@ sex_orientation_questions = [
         },
 
         {
-            "text": "I have fantasized about sexual intercourse with:",
+            "text": "I have fantasized about sexual intercourse mostly with:",
             "answers": {
                 "A male-presenting person": "Androphile",
                 "A female-presenting person": "Gynophile",
@@ -414,7 +447,7 @@ sex_orientation_questions = [
         },
 
         {
-            "text": "I have found sexually attractive:",
+            "text": "I have mostly found sexually attractive:",
             "condition": {
                 "question_id": "no_sexual_attraction",
                 "value": "False"
@@ -430,7 +463,7 @@ sex_orientation_questions = [
         },
 
         {
-            "text": "I have been sexually aroused by:",
+            "text": "I have been sexually aroused mostly by:",
             "condition": {
                 "question_id": "no_arousal",
                 "value": "False"
@@ -446,7 +479,7 @@ sex_orientation_questions = [
         },
 
         {
-            "text": "I have fantasized about non-sexual petting and/or bodily closeness with:",
+            "text": "I have fantasized about non-sexual petting and/or bodily closeness mostly with:",
             "answers": {
                 "A male-presenting person": "Androphile",
                 "A female-presenting person": "Gynophile",
@@ -458,7 +491,7 @@ sex_orientation_questions = [
         },
 
         {
-            "text": "I have found myself wanting to have real-life sexual intercourse with:",
+            "text": "I have found myself wanting to have real-life sexual intercourse mostly with:",
             "answers": {
                 "A male-presenting person": "Androphile",
                 "A female-presenting person": "Gynophile",
@@ -573,7 +606,7 @@ else:
 input("Press enter to continue with the romantic orientation test.")
 
 # Romantic orientation
-rom_orientation_points = {"Aromantic": 0, "Androromantic": 0, "Gynoromantic": 0, "Biromantic": 0, "Panromantic": 0, "Lithromantic": 0}
+rom_orientation_points = {"Aromantic": 0, "Aroflux": 0, "Gray-romantic": 0, "Androromantic": 0, "Gynoromantic": 0, "Biromantic": 0, "Panromantic": 0, "Lithromantic": 0}
 
 # Questions
 rom_orientation_questions = [
@@ -581,8 +614,11 @@ rom_orientation_questions = [
             "text": "I have difficulty understanding people’s obsession with romantic love and relationships.",
             "answers": {
                 "True": "Aromantic",
+                "Mostly true": "Gray-romantic",
+                "Mostly false": None,
                 "False": None,
                 "I don't know": None,
+                "It varies from time to time": "Aroflux",
             }
         },
 
@@ -590,68 +626,95 @@ rom_orientation_questions = [
             "text": "I prefer to spend my time with friends or pursuing my own interests rather than seeking out a romantic partner.",
             "answers": {
                 "True": "Aromantic",
+                "Mostly true": "Gray-romantic",
+                "Mostly false": None,
                 "False": None,
                 "I don't know": None,
+                "It varies from time to time": "Aroflux",
             }
         },
 
         {
             "text": "I find it difficult to relate to media and culture that portrays romance as a universal aspect of human life.",
             "answers": {
+                
                 "True": "Aromantic",
+                "Mostly true": "Gray-romantic",
+                "Mostly false": None,
                 "False": None,
                 "I don't know": None,
+                "It varies from time to time": "Aroflux",
             }
         },
 
         {
             "text": "I don't feel romantically attracted to (i.e. want to be in a romantic relationship with) other people, regardless of their gender or appearance.",
             "answers": {
+                
                 "True": "Aromantic",
+                "Mostly true": "Gray-romantic",
+                "Mostly false": None,
                 "False": None,
                 "I don't know": None,
+                "It varies from time to time": "Aroflux",
             }
         },
 
         {
             "text": "Even if I am fascinated with a person on account of their looks or personality, I do not wish to be in a romantic relationship with them.",
             "answers": {
+                
                 "True": "Aromantic",
+                "Mostly true": "Gray-romantic",
+                "Mostly false": None,
                 "False": None,
                 "I don't know": None,
+                "It varies from time to time": "Aroflux",
             }
         },
 
         {
             "text": "I wouldn't mind if I would never be in a romantic relationship (again).",
             "answers": {
+                
                 "True": "Aromantic",
+                "Mostly true": "Gray-romantic",
+                "Mostly false": None,
                 "False": None,
                 "I don't know": None,
+                "It varies from time to time": "Aroflux",
             }
         },
 
         {
             "text": "I find it difficult to relate to the intense romantic feelings that others often express.",
             "answers": {
+                
                 "True": "Aromantic",
+                "Mostly true": "Gray-romantic",
+                "Mostly false": None,
                 "False": None,
                 "I don't know": None,
+                "It varies from time to time": "Aroflux",
             }
         },
         
         {
             "text": "I don't really know what it's like to feel romantic attraction.",
             "answers": {
+                
                 "True": "Aromantic",
+                "Mostly true": "Gray-romantic",
+                "Mostly false": None,
                 "False": None,
                 "I don't know": None,
+                "It varies from time to time": "Aroflux",
             }
         },
         
         {
-            "text": "I feel romantic attraction, but do not want it to be reciprocated.",
-            "answers": {
+            "text": "I feel romantic attraction, but do not want it to be reciprocated. (Lithromantic)",
+            "answers": {aroflux
                 "True": "Lithromantic",
                 "False": None,
                 "I don't know": None,
@@ -659,7 +722,7 @@ rom_orientation_questions = [
         },
 
         {
-            "text": "I have felt \"butterflies\" in the presence of:",
+            "text": "I have generally felt \"butterflies\" in the presence of:",
             "answers": {
                 "A male-presenting person": "Androromantic",
                 "A female-presenting person": "Gynoromantic",
@@ -671,7 +734,7 @@ rom_orientation_questions = [
         },
 
         {
-            "text": "I have fantasized about a romantic relationship with:",
+            "text": "I have fantasized about a romantic relationship mostly with:",
             "answers": {
                 "A male-presenting person": "Androromantic",
                 "A female-presenting person": "Gynoromantic",
@@ -683,7 +746,7 @@ rom_orientation_questions = [
         },
 
         {
-            "text": "I have felt a very strong urge/need to spend time with:",
+            "text": "I have felt a very strong urge/need to spend time mostly with:",
             "answers": {
                 "A male-presenting person before": "Androromantic",
                 "A female-presenting person before": "Gynoromantic",
@@ -707,7 +770,7 @@ rom_orientation_questions = [
         },
 
         {
-            "text": "I have had to compulsively think about:",
+            "text": "I have had to compulsively think mostly about:",
             "answers": {
                 "A male-presenting person before": "Androromantic",
                 "A female-presenting person before": "Gynoromantic",
@@ -719,7 +782,7 @@ rom_orientation_questions = [
         },
 
         {
-            "text": "I have found myself wanting to be in a real-life romantic relationship with:",
+            "text": "I have found myself wanting to be in a real-life romantic relationship mostly with:",
             "answers": {
                 "A male-presenting person": "Androromantic",
                 "A female-presenting person": "Gynoromantic",
