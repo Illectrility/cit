@@ -714,7 +714,7 @@ rom_orientation_questions = [
         
         {
             "text": "I feel romantic attraction, but do not want it to be reciprocated. (Lithromantic)",
-            "answers": {aroflux
+            "answers": {
                 "True": "Lithromantic",
                 "False": None,
                 "I don't know": None,
