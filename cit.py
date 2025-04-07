@@ -344,15 +344,6 @@ sex_orientation_questions = [
         },
 
         {
-            "text": "I feel anxious or uneasy when I am expected to engage in sexual behavior.",
-            "answers": {
-                "True": "Asexual",
-                "False": None,
-                "I don't know": None,
-            }
-        },
-
-        {
             "text": "I find it difficult to relate to media and culture that portrays sex as a universal aspect of human life.",
             "answers": {
                 "True": "Asexual",
@@ -399,10 +390,11 @@ sex_orientation_questions = [
         },
 
         {
-            "text": "Recently, I have wanted to touch intimately and/or be naked in the company of:",
+            "text": "I want to touch intimately and/or be naked in the company of:",
             "answers": {
                 "A male-presenting person": "Androphile",
                 "A female-presenting person": "Gynophile",
+                "Both female and male-presenting people": "Bisexual",
                 "People of more than one gender identity": "Bisexual",
                 "No one": "Asexual",
                 "People, regardless of their gender identity": "Pansexual",
@@ -414,6 +406,7 @@ sex_orientation_questions = [
             "answers": {
                 "A male-presenting person": "Androphile",
                 "A female-presenting person": "Gynophile",
+                "Both female and male-presenting people": "Bisexual",
                 "People of more than one gender identity": "Bisexual",
                 "No one": "Asexual",
                 "People, regardless of their gender identity": "Pansexual",
@@ -429,6 +422,7 @@ sex_orientation_questions = [
             "answers": {
                 "A male-presenting person": "Androphile",
                 "A female-presenting person": "Gynophile",
+                "Both female and male-presenting people": "Bisexual",
                 "People of more than one gender identity": "Bisexual",
                 "No one": "Asexual",
                 "People, regardless of their gender identity": "Pansexual",
@@ -444,6 +438,7 @@ sex_orientation_questions = [
             "answers": {
                 "A male-presenting person": "Androphile",
                 "A female-presenting person": "Gynophile",
+                "Both female and male-presenting people": "Bisexual",
                 "People of more than one gender identity": "Bisexual",
                 "No one": "Asexual",
                 "People, regardless of their gender identity": "Pansexual",
@@ -455,6 +450,7 @@ sex_orientation_questions = [
             "answers": {
                 "A male-presenting person": "Androphile",
                 "A female-presenting person": "Gynophile",
+                "Both female and male-presenting people": "Bisexual",
                 "People of more than one gender identity": "Bisexual",
                 "No one": "Asexual",
                 "People, regardless of their gender identity": "Pansexual",
@@ -466,6 +462,7 @@ sex_orientation_questions = [
             "answers": {
                 "A male-presenting person": "Androphile",
                 "A female-presenting person": "Gynophile",
+                "Both female and male-presenting people": "Bisexual",
                 "People of more than one gender identity": "Bisexual",
                 "No one": "Asexual",
                 "People, regardless of their gender identity": "Pansexual",
@@ -666,6 +663,7 @@ rom_orientation_questions = [
             "answers": {
                 "A male-presenting person": "Androromantic",
                 "A female-presenting person": "Gynoromantic",
+                "Both female and male-presenting people": "Bisexual",
                 "People of more than one gender identity": "Biromantic",
                 "No one": "Aromantic",
                 "People, regardless of their gender identity": "Panromantic",
@@ -677,6 +675,7 @@ rom_orientation_questions = [
             "answers": {
                 "A male-presenting person": "Androromantic",
                 "A female-presenting person": "Gynoromantic",
+                "Both female and male-presenting people": "Bisexual",
                 "People of more than one gender identity": "Biromantic",
                 "No one": "Aromantic",
                 "People, regardless of their gender identity": "Panromantic",
@@ -688,6 +687,7 @@ rom_orientation_questions = [
             "answers": {
                 "A male-presenting person before": "Androromantic",
                 "A female-presenting person before": "Gynoromantic",
+                "Both female and male-presenting people before": "Bisexual",
                 "People of more than one gender identity before": "Biromantic",
                 "No one": "Aromantic",
                 "People, regardless of their gender identity before": "Panromantic",
@@ -699,6 +699,7 @@ rom_orientation_questions = [
             "answers": {
                 "A male-presenting person before": "Androromantic",
                 "A female-presenting person before": "Gynoromantic",
+                "Both female and male-presenting people before": "Bisexual",
                 "People of more than one gender identity before": "Biromantic",
                 "No one": "Aromantic",
                 "People, regardless of their gender identity": "Panromantic before",
@@ -710,6 +711,7 @@ rom_orientation_questions = [
             "answers": {
                 "A male-presenting person before": "Androromantic",
                 "A female-presenting person before": "Gynoromantic",
+                "Both female and male-presenting people before": "Bisexual",
                 "People of more than one gender identity before": "Biromantic",
                 "No one": "Aromantic",
                 "People, regardless of their gender identity before": "Panromantic",
@@ -721,6 +723,7 @@ rom_orientation_questions = [
             "answers": {
                 "A male-presenting person": "Androromantic",
                 "A female-presenting person": "Gynoromantic",
+                "Both female and male-presenting people": "Bisexual",
                 "People of more than one gender identity": "Biromantic",
                 "No one": "Aromantic",
                 "People, regardless of their gender identity": "Panromantic",
