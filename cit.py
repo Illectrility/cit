@@ -105,7 +105,7 @@ gender_questions = [
         },
 
         {
-            "text": "I consistently use or want to use my style/behavior/mannerisms to express the following gender, and doing so feels right for me:"",
+            "text": "I consistently use or want to use my style/behavior/mannerisms to express the following gender, and doing so feels right for me:",
             "condition": {
                 "question_id": "expresses_sex",
                 "value": ["False", "It varies from time to time", "I don't feel like my gender identity influences my style/behavior/mannerisms"]
