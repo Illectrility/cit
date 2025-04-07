@@ -31,10 +31,23 @@ gender_questions = [
         },
 
         {
-            "text": "I don't want to express my gender identity in ways that highlight the gender stereotypes in our society.",
+            "text": "I want to express myself in ways that highlight the gender stereotypes of the following gender:",
             "answers": {
-                "True": ["Non-binary", "Agender"],
-                "False": None,
+                "Male": {
+                    "Male": "Cis male",
+                    "Female": "Transmasc",
+                    "Intersex": "Transmasc",
+                },
+                "Female": {
+                    "Male": "Transfem",
+                    "Female": "Cis female",
+                    "Intersex": "Transfem",
+                },
+                "Intersex": "Intersex",
+                "It varies from time to time": "Gender fluid",
+                "Neither male nor female": "Non-binary",
+                "I don't feel like I am actively living as a particular gender": "Agender",
+                "None": "Agender",
             }
         },
 
@@ -169,7 +182,7 @@ gender_questions = [
         },
 
         {
-            "text": "In order for my physical body to match my gender identity, it would have to look",
+            "text": "If I could choose, I would like to have a physical body that looks typically:",
             "answers": {
                 "Masculine": {
                     "Male": "Cis male",
@@ -184,7 +197,8 @@ gender_questions = [
                 "Intersex": "Intersex",
                 "Neither male nor female": "Non-binary",
                 "Genderless": "Agender",
-                "I don't feel like I have a gender identity": "Agender",
+                "I don't care what gender my body looks like": ["Non-binary", "Agender"],
+                "I don't feel like my body would match my gender identity, regardless": ["Non-binary", "Agender"],
                 "It varies from time to time": "Gender fluid",
             }
         },
@@ -389,25 +403,25 @@ sex_orientation_questions = [
             "answers": {
                 "A male-presenting person": "Androphile",
                 "A female-presenting person": "Gynophile",
-                "Both": "Bisexual",
-                "Neither": "Asexual",
+                "People of more than one gender identity": "Bisexual",
+                "No one": "Asexual",
                 "People, regardless of their gender identity": "Pansexual",
             }
         },
 
         {
-            "text": "Fantasized about sexual intercourse with:",
+            "text": "I have fantasized about sexual intercourse with:",
             "answers": {
                 "A male-presenting person": "Androphile",
                 "A female-presenting person": "Gynophile",
-                "Both": "Bisexual",
-                "Neither": "Asexual",
+                "People of more than one gender identity": "Bisexual",
+                "No one": "Asexual",
                 "People, regardless of their gender identity": "Pansexual",
             }
         },
 
         {
-            "text": "Found sexually attractive:",
+            "text": "I have found sexually attractive:",
             "condition": {
                 "question_id": "no_sexual_attraction",
                 "value": "False"
@@ -415,14 +429,14 @@ sex_orientation_questions = [
             "answers": {
                 "A male-presenting person": "Androphile",
                 "A female-presenting person": "Gynophile",
-                "Both": "Bisexual",
-                "Neither": "Asexual",
+                "People of more than one gender identity": "Bisexual",
+                "No one": "Asexual",
                 "People, regardless of their gender identity": "Pansexual",
             }
         },
 
         {
-            "text": "Was sexually aroused by:",
+            "text": "I have been sexually aroused by:",
             "condition": {
                 "question_id": "no_arousal",
                 "value": "False"
@@ -430,30 +444,30 @@ sex_orientation_questions = [
             "answers": {
                 "A male-presenting person": "Androphile",
                 "A female-presenting person": "Gynophile",
-                "Both": "Bisexual",
-                "Neither": "Asexual",
+                "People of more than one gender identity": "Bisexual",
+                "No one": "Asexual",
                 "People, regardless of their gender identity": "Pansexual",
             }
         },
 
         {
-            "text": "Fantasized about non-sexual petting and/or bodily closeness with:",
+            "text": "I have fantasized about non-sexual petting and/or bodily closeness with:",
             "answers": {
                 "A male-presenting person": "Androphile",
                 "A female-presenting person": "Gynophile",
-                "Both": "Bisexual",
-                "Neither": "Asexual",
+                "People of more than one gender identity": "Bisexual",
+                "No one": "Asexual",
                 "People, regardless of their gender identity": "Pansexual",
             }
         },
 
         {
-            "text": "Found myself wanting to have real-life sexual intercourse with:",
+            "text": "I have found myself wanting to have real-life sexual intercourse with:",
             "answers": {
                 "A male-presenting person": "Androphile",
                 "A female-presenting person": "Gynophile",
-                "Both": "Bisexual",
-                "Neither": "Asexual",
+                "People of more than one gender identity": "Bisexual",
+                "No one": "Asexual",
                 "People, regardless of their gender identity": "Pansexual",
             }
         },
@@ -652,8 +666,8 @@ rom_orientation_questions = [
             "answers": {
                 "A male-presenting person": "Androromantic",
                 "A female-presenting person": "Gynoromantic",
-                "Both": "Biromantic",
-                "Neither": "Aromantic",
+                "People of more than one gender identity": "Biromantic",
+                "No one": "Aromantic",
                 "People, regardless of their gender identity": "Panromantic",
             }
         },
@@ -663,52 +677,52 @@ rom_orientation_questions = [
             "answers": {
                 "A male-presenting person": "Androromantic",
                 "A female-presenting person": "Gynoromantic",
-                "Both": "Biromantic",
-                "Neither": "Aromantic",
+                "People of more than one gender identity": "Biromantic",
+                "No one": "Aromantic",
                 "People, regardless of their gender identity": "Panromantic",
             }
         },
 
         {
-            "text": "I have had a strong urge/need to spend time with this type of person before:",
+            "text": "I have felt a very strong urge/need to spend time with:",
             "answers": {
-                "A male-presenting person": "Androromantic",
-                "A female-presenting person": "Gynoromantic",
-                "Both": "Biromantic",
-                "Neither": "Aromantic",
-                "People, regardless of their gender identity": "Panromantic",
+                "A male-presenting person before": "Androromantic",
+                "A female-presenting person before": "Gynoromantic",
+                "People of more than one gender identity before": "Biromantic",
+                "No one": "Aromantic",
+                "People, regardless of their gender identity before": "Panromantic",
             }
         },
 
         {
-            "text": "Because of this type of person, I have had mild insomnia before:",
+            "text": "I have had mild insomnia because of:",
             "answers": {
-                "A male-presenting person": "Androromantic",
-                "A female-presenting person": "Gynoromantic",
-                "Both": "Biromantic",
-                "Neither": "Aromantic",
-                "People, regardless of their gender identity": "Panromantic",
+                "A male-presenting person before": "Androromantic",
+                "A female-presenting person before": "Gynoromantic",
+                "People of more than one gender identity before": "Biromantic",
+                "No one": "Aromantic",
+                "People, regardless of their gender identity": "Panromantic before",
             }
         },
 
         {
-            "text": "I have had to compulsively think about a person like this before:",
+            "text": "I have had to compulsively think about:",
             "answers": {
-                "A male-presenting person": "Androromantic",
-                "A female-presenting person": "Gynoromantic",
-                "Both": "Biromantic",
-                "Neither": "Aromantic",
-                "People, regardless of their gender identity": "Panromantic",
+                "A male-presenting person before": "Androromantic",
+                "A female-presenting person before": "Gynoromantic",
+                "People of more than one gender identity before": "Biromantic",
+                "No one": "Aromantic",
+                "People, regardless of their gender identity before": "Panromantic",
             }
         },
 
         {
-            "text": "Found myself wanting to be in a real-life romantic relationship with:",
+            "text": "I have found myself wanting to be in a real-life romantic relationship with:",
             "answers": {
                 "A male-presenting person": "Androromantic",
                 "A female-presenting person": "Gynoromantic",
-                "Both": "Biromantic",
-                "Neither": "Aromantic",
+                "People of more than one gender identity": "Biromantic",
+                "No one": "Aromantic",
                 "People, regardless of their gender identity": "Panromantic",
             }
         },
