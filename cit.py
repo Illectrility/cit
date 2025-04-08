@@ -5,7 +5,7 @@ gender_points = {"Cis male": 0, "Cis female": 0, "Gender fluid": 0, "Non-binary"
 gender_questions = [
         {
             "id": "sex",
-            "text": "What is your sex?",
+            "text": "What is your birth-assigned sex?",
             "answers": {
                 "Male": None,
                 "Female": None,
@@ -435,7 +435,7 @@ sex_orientation_questions = [
         },
 
         {
-            "text": "I have fantasized about sexual intercourse mostly with:",
+            "text": "I have generally fantasized about sexual intercourse with:",
             "answers": {
                 "A male-presenting person": "Androphile",
                 "A female-presenting person": "Gynophile",
@@ -447,7 +447,7 @@ sex_orientation_questions = [
         },
 
         {
-            "text": "I have mostly found sexually attractive:",
+            "text": "I have generally found sexually attractive:",
             "condition": {
                 "question_id": "no_sexual_attraction",
                 "value": "False"
@@ -463,7 +463,7 @@ sex_orientation_questions = [
         },
 
         {
-            "text": "I have been sexually aroused mostly by:",
+            "text": "I have generally been sexually aroused by:",
             "condition": {
                 "question_id": "no_arousal",
                 "value": "False"
@@ -479,7 +479,7 @@ sex_orientation_questions = [
         },
 
         {
-            "text": "I have fantasized about non-sexual petting and/or bodily closeness mostly with:",
+            "text": "I have generally fantasized about non-sexual petting and/or bodily closeness with:",
             "answers": {
                 "A male-presenting person": "Androphile",
                 "A female-presenting person": "Gynophile",
@@ -491,7 +491,7 @@ sex_orientation_questions = [
         },
 
         {
-            "text": "I have found myself wanting to have real-life sexual intercourse mostly with:",
+            "text": "I have generally found myself wanting to have real-life sexual intercourse with:",
             "answers": {
                 "A male-presenting person": "Androphile",
                 "A female-presenting person": "Gynophile",
@@ -734,7 +734,7 @@ rom_orientation_questions = [
         },
 
         {
-            "text": "I have fantasized about a romantic relationship mostly with:",
+            "text": "I have generally fantasized about a romantic relationship with:",
             "answers": {
                 "A male-presenting person": "Androromantic",
                 "A female-presenting person": "Gynoromantic",
@@ -746,7 +746,7 @@ rom_orientation_questions = [
         },
 
         {
-            "text": "I have felt a very strong urge/need to spend time mostly with:",
+            "text": "I have generally felt a very strong urge/need to spend time with:",
             "answers": {
                 "A male-presenting person before": "Androromantic",
                 "A female-presenting person before": "Gynoromantic",
@@ -770,7 +770,7 @@ rom_orientation_questions = [
         },
 
         {
-            "text": "I have had to compulsively think mostly about:",
+            "text": "I generally have had to compulsively think about:",
             "answers": {
                 "A male-presenting person before": "Androromantic",
                 "A female-presenting person before": "Gynoromantic",
@@ -782,7 +782,7 @@ rom_orientation_questions = [
         },
 
         {
-            "text": "I have found myself wanting to be in a real-life romantic relationship mostly with:",
+            "text": "I have generally found myself wanting to be in a real-life romantic relationship with:",
             "answers": {
                 "A male-presenting person": "Androromantic",
                 "A female-presenting person": "Gynoromantic",
