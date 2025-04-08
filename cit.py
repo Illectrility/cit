@@ -124,7 +124,7 @@ gender_questions = [
                 "Intersex": "Intersex",
                 "It varies from time to time": "Gender fluid",
                 "Neither male nor female": "Non-binary",
-                "I don't feel like I am actively living as a particular gender": "Agender",
+                "I don't feel like I actively (want to) express a particular gender": "Agender",
                 "None": "Agender",
                 "Skip": None,
             }
