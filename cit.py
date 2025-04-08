@@ -606,7 +606,7 @@ else:
 input("Press enter to continue with the romantic orientation test.")
 
 # Romantic orientation
-rom_orientation_points = {"Aromantic": 0, "Aroflux": 0, "Gray-romantic": 0, "Androromantic": 0, "Gynoromantic": 0, "Biromantic": 0, "Panromantic": 0, "Lithromantic": 0}
+rom_orientation_points = {"Aromantic": 0, "Aroflux": 0, "Greyromantic": 0, "Androromantic": 0, "Gynoromantic": 0, "Biromantic": 0, "Panromantic": 0, "Lithromantic": 0}
 
 # Questions
 rom_orientation_questions = [
@@ -614,7 +614,7 @@ rom_orientation_questions = [
             "text": "I have difficulty understanding people’s obsession with romantic love and relationships.",
             "answers": {
                 "True": "Aromantic",
-                "Mostly true": "Gray-romantic",
+                "Mostly true": "Greyromantic",
                 "Mostly false": None,
                 "False": None,
                 "I don't know": None,
@@ -626,7 +626,7 @@ rom_orientation_questions = [
             "text": "I prefer to spend my time with friends or pursuing my own interests rather than seeking out a romantic partner.",
             "answers": {
                 "True": "Aromantic",
-                "Mostly true": "Gray-romantic",
+                "Mostly true": "Greyromantic",
                 "Mostly false": None,
                 "False": None,
                 "I don't know": None,
@@ -639,7 +639,7 @@ rom_orientation_questions = [
             "answers": {
                 
                 "True": "Aromantic",
-                "Mostly true": "Gray-romantic",
+                "Mostly true": "Greyromantic",
                 "Mostly false": None,
                 "False": None,
                 "I don't know": None,
@@ -652,7 +652,7 @@ rom_orientation_questions = [
             "answers": {
                 
                 "True": "Aromantic",
-                "Mostly true": "Gray-romantic",
+                "Mostly true": "Greyromantic",
                 "Mostly false": None,
                 "False": None,
                 "I don't know": None,
@@ -665,7 +665,7 @@ rom_orientation_questions = [
             "answers": {
                 
                 "True": "Aromantic",
-                "Mostly true": "Gray-romantic",
+                "Mostly true": "Greyromantic",
                 "Mostly false": None,
                 "False": None,
                 "I don't know": None,
@@ -678,7 +678,7 @@ rom_orientation_questions = [
             "answers": {
                 
                 "True": "Aromantic",
-                "Mostly true": "Gray-romantic",
+                "Mostly true": "Greyromantic",
                 "Mostly false": None,
                 "False": None,
                 "I don't know": None,
@@ -691,7 +691,7 @@ rom_orientation_questions = [
             "answers": {
                 
                 "True": "Aromantic",
-                "Mostly true": "Gray-romantic",
+                "Mostly true": "Greyromantic",
                 "Mostly false": None,
                 "False": None,
                 "I don't know": None,
@@ -704,7 +704,7 @@ rom_orientation_questions = [
             "answers": {
                 
                 "True": "Aromantic",
-                "Mostly true": "Gray-romantic",
+                "Mostly true": "Greyromantic",
                 "Mostly false": None,
                 "False": None,
                 "I don't know": None,
